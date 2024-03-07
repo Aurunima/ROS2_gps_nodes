@@ -32,3 +32,7 @@ In terminal 1: \
 In terminal 2: \
 &nbsp;ros2 run gps_communication gps_subscriber
 
+#### Comments
+
+The gps_data.hpp file is automatically generated from the GPSData.msg file during the build process. \
+gps_data.hpp header file will be located in the 'install/gps_communication/include/gps_communication/msg' directory after package build.
