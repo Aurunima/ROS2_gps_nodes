@@ -1,9 +1,9 @@
-### gps_communication Readme
+### Readme
 
 **Platform**: Raspberry Pi 5 \
 **Docker image**: arm64v8/ros:humble
 
-_Workspace name_: ros2raspi5_ws
+_Workspace name_: ros2raspi5_ws \
 _Package name_: gps_communication
 
 #### Folder structure
