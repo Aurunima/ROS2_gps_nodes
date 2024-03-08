@@ -22,6 +22,7 @@ cd ros2raspi5_ws/src \
 git clone https://github.com/Aurunima/gps_communication
 
 #### Build:
+cd .. \
 colcon build --packages-select gps_communication
 
 #### Source the workspace:
