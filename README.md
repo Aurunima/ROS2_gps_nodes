@@ -16,6 +16,11 @@ gps_communication \
 &emsp;├── gps_publisher.cpp \
 &emsp;├── gps_subscriber.cpp
 
+#### Clone directory
+mkdir -p ros2raspi5_ws/src \
+cd ros2raspi5_ws/src \
+git clone https://github.com/Aurunima/gps_communication
+
 #### Build:
 colcon build --packages-select gps_communication
 
