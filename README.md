@@ -16,8 +16,10 @@ gps_communication \
 &emsp;├── gps_publisher.cpp \
 &emsp;├── gps_subscriber.cpp
 
+#### Source ROS2 environment
+source /opt/ros/humble/setup.bash
+
 #### Clone directory
-mkdir -p ros2raspi5_ws/src \
 cd ros2raspi5_ws/src \
 git clone https://github.com/Aurunima/gps_communication
 
@@ -26,10 +28,10 @@ cd .. \
 colcon build --packages-select gps_communication
 
 #### Source the workspace:
-source /ros2raspi5_ws/install/setup.bash
+source /install/setup.bash
 
 #### Run the publisher and subscriber nodes in separate terminals:
-(Maybe use [tmux](https://www.redhat.com/sysadmin/introduction-tmux-linux) to use multiple bash sessions in same terminal)
+(Maybe use [tmux](https://www.redhat.com/sysadmin/introduction-tmux-linux) to use multiple sessions in same terminal)
 
 In terminal 1: \
 &nbsp;ros2 run gps_communication gps_publisher
