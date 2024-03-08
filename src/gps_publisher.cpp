@@ -2,7 +2,7 @@
 #include <functional>
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
-#include "gps_communication/msg/gps_data.hpp" // Include custom message type
+#include "gps_communication/msg/GPSData.hpp" // Include custom message type
 
 using namespace std::chrono_literals;
 
