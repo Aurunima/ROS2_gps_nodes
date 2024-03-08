@@ -23,8 +23,11 @@ source /opt/ros/humble/setup.bash
 cd ros2raspi5_ws/src \
 git clone https://github.com/Aurunima/gps_communication
 
-#### Build:
+#### Check dependencies
 cd .. \
+rosdep install -i --from-path src --rosdistro humble -y
+
+#### Build:
 colcon build --packages-select gps_communication
 
 #### Source the workspace:
