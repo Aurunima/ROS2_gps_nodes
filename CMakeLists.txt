@@ -4,7 +4,8 @@ project(gps_communication)
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)  # Include any other dependencies you need
+find_package(std_msgs REQUIRED)
+find_package(${PROJECT_NAME} REQUIRED) # Include any other dependencies you need
 
 # Generate custom messages
 find_package(rosidl_default_generators REQUIRED)
